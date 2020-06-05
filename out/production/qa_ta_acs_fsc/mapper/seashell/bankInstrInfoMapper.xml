@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bill99.fsc.mapper.seashell.bankInstrInfoMapper">
+    <resultMap id="bankInstrInfoEo" type="com.bill99.fsc.entity.oracleSeashell.BankInstrInfoEo">
+        <result property="tid" column="T_ID" />
+        <result property="batchId" column="BATCHID" />
+        <result property="orderSeqId" column="ORDERSEQID" />
+        <result property="channelId" column="CHANNEL_ID" />
+        <result property="channelCode" column="CHANNEL_CODE" />
+        <result property="bankServiceId" column="BANK_SERVICE_ID" />
+        <result property="transType" column="TRANS_TYPE" />
+        <result property="amount" column="AMOUNT" />
+        <result property="status" column="STATUS" />
+        <result property="statusExt" column="STATUS_EXT" />
+        <result property="bankStatus" column="BANK_STATUS" />
+        <result property="bankStatusDesc" column="BANK_STATUS_DESC" />
+        <result property="bankRemind" column="BANK_REMIND" />
+        <result property="memberCode" column="MEMBER_CODE" />
+        <result property="memberName" column="MEMBER_NAME" />
+        <result property="bankPurpose" column="BANK_PURPOSE" />
+        <result property="bankMemo" column="BANK_MEMO" />
+        <result property="isIndividual" column="IS_INDIVIDUAL" />
+        <result property="isSameBank" column="IS_SAME_BANK" />
+        <result property="directAttr" column="DIRECT_ATTR" />
+        <result property="payerAcctNo" column="PAYER_ACCT_NO" />
+        <result property="payerAcctName" column="PAYER_ACCT_NAME" />
+        <result property="payerBranchName" column="PAYER_BRANCH_NAME" />
+        <result property="payerBranchProvince" column="PAYER_BRANCH_PROVINCE" />
+        <result property="payerBranchCity" column="PAYER_BRANCH_CITY" />
+        <result property="payerAgentCode" column="PAYER_AGENT_CODE" />
+        <result property="payerBankId" column="PAYER_BANK_ID" />
+        <result property="payerBankAgentCode" column="PAYER_BANK_AGENT_CODE" />
+        <result property="payerCurrency" column="PAYER_CURRENCY" />
+        <result property="payerCountryName" column="PAYER_COUNTRY_NAME" />
+        <result property="payeeAcctNo" column="PAYEE_ACCT_NO" />
+        <result property="payeeAcctName" column="PAYEE_ACCT_NAME" />
+        <result property="payeeBranchName" column="PAYEE_BRANCH_NAME" />
+        <result property="payeeBranchProvince" column="PAYEE_BRANCH_PROVINCE" />
+        <result property="payeeBranchCity" column="PAYEE_BRANCH_CITY" />
+        <result property="payeeAgentCode" column="PAYEE_AGENT_CODE" />
+        <result property="payeeBankId" column="PAYEE_BANK_ID" />
+        <result property="payeeBankAgentCode" column="PAYEE_BANK_AGENT_CODE" />
+        <result property="payeeCurrency" column="PAYEE_CURRENCY" />
+        <result property="payeeCountryName" column="PAYEE_COUNTRY_NAME" />
+        <result property="oppAcctType" column="OPP_ACCT_TYPE" />
+        <result property="bigPayBankNo" column="BIG_PAY_BANK_NO" />
+        <result property="clearBankNo" column="CLEAR_BANK_NO" />
+        <result property="interfaceId" column="INTERFACE_ID" />
+        <result property="requestSn" column="REQUEST_SN" />
+        <result property="dbTrBankId" column="DB_TR_BANK_ID" />
+        <result property="cdTrBankId" column="CD_TR_BANK_ID" />
+        <result property="sender" column="SENDER" />
+        <result property="canceller" column="CANCELLER" />
+        <result property="auditor" column="AUDITOR" />
+        <result property="priority" column="PRIORITY" />
+        <result property="cancelReason" column="CANCEL_REASON" />
+        <result property="idOfBankSeg1" column="ID_OF_BANK_SEG1" />
+        <result property="idOfBankSeg2" column="ID_OF_BANK_SEG2" />
+        <result property="idOfBankSeg3" column="ID_OF_BANK_SEG3" />
+        <result property="idOfBankSeg4" column="ID_OF_BANK_SEG4" />
+        <result property="idOfBankSeg5" column="ID_OF_BANK_SEG5" />
+        <result property="idOfBankSeg6" column="ID_OF_BANK_SEG6" />
+        <result property="optimismLock" column="OPTIMISM_LOCK" />
+        <result property="memo" column="MEMO" />
+        <result property="memo2" column="MEMO2" />
+        <result property="memo3" column="MEMO3" />
+        <result property="memo4" column="MEMO4" />
+        <result property="sendTime" column="SEND_TIME" />
+        <result property="cancelTime" column="CANCEL_TIME" />
+        <result property="crtTime" column="CRT_TIME" />
+        <result property="updTime" column="UPD_TIME" />
+        <result property="businessFields" column="BUSINESS_FIELDS" />
+
+    </resultMap>
+    <sql id="Base_Column_list">
+        T_ID, BATCHID, ORDERSEQID, CHANNEL_ID, CHANNEL_CODE, BANK_SERVICE_ID, TRANS_TYPE, AMOUNT,
+		STATUS, STATUS_EXT, BANK_STATUS, BANK_STATUS_DESC,BANK_REMIND, MEMBER_CODE, MEMBER_NAME, BANK_PURPOSE,
+		BANK_MEMO, IS_INDIVIDUAL, IS_SAME_BANK, DIRECT_ATTR, PAYER_ACCT_NO, PAYER_ACCT_NAME,PAYER_BRANCH_NAME,
+		PAYER_BRANCH_PROVINCE, PAYER_BRANCH_CITY, PAYER_AGENT_CODE, PAYER_BANK_ID,
+		PAYER_BANK_AGENT_CODE, PAYER_CURRENCY, PAYER_COUNTRY_NAME, PAYEE_ACCT_NO,PAYEE_ACCT_NAME,
+		PAYEE_BRANCH_NAME, PAYEE_BRANCH_PROVINCE, PAYEE_BRANCH_CITY, PAYEE_AGENT_CODE, PAYEE_BANK_ID,PAYEE_BANK_AGENT_CODE, PAYEE_CURRENCY,
+		PAYEE_COUNTRY_NAME, OPP_ACCT_TYPE, BIG_PAY_BANK_NO,CLEAR_BANK_NO, INTERFACE_ID, REQUEST_SN, DB_TR_BANK_ID, CD_TR_BANK_ID, SENDER, CANCELLER, AUDITOR,
+		PRIORITY,CANCEL_REASON, ID_OF_BANK_SEG1, ID_OF_BANK_SEG2, ID_OF_BANK_SEG3, ID_OF_BANK_SEG4, ID_OF_BANK_SEG5, ID_OF_BANK_SEG6,OPTIMISM_LOCK, MEMO, MEMO2,
+		MEMO3, MEMO4, SEND_TIME, CANCEL_TIME, CRT_TIME, UPD_TIME,BUSINESS_FIELDS
+    </sql>
+
+</mapper>

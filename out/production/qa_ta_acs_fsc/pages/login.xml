@@ -1,0 +1,10 @@
+<page name="首页">
+    <Element eleName="账号" locat='id^loginform:idInput'></Element>
+    <Element eleName="密码" locat="id^loginform:pwdInput"></Element>
+    <Element eleName="登录" locat="css^span a"></Element>
+    <Element eleName="出款" locat="css^ul li[style]:nth-child(4) img.imag1"></Element>
+    <Element eleName="汇款" locat='xpath^//*[@id="nav"]/div[4]/div[2]/ul/li[1]/div/span[3]'></Element>
+    <Element eleName="银企直连" locat='xpath^//*[@id="nav"]/div[4]/div[2]/ul/li[2]/div/span[3]'></Element>
+    <Element eleName="响应信息" locat='css^div[style="right: 0px; bottom: 0px;"]'></Element>
+
+</page>

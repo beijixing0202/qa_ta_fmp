@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bill99.fmp.mapper.fmp.BatchRefundTaskMapper">
+    <resultMap id="batchRefundTaskEo" type="com.bill99.fmp.entity.mysql.BatchRefundTaskEo">
+        <result property="taskId" column="TASK_ID" />
+        <result property="totalAmount" column="TOTAL_AMOUNT" />
+        <result property="totalNum" column="TOTAL_NUM" />
+        <result property="autoMappingNum" column="AOTUMAPPING_NUM" />
+        <result property="handMappingNum" column="HANDMAPPING_NUM" />
+        <result property="status" column="STATUS" />
+        <result property="version" column="VERSION" />
+        <result property="fssId" column="FSS_ID" />
+        <result property="memo" column="MEMO" />
+        <result property="crt_time" column="CRT_TIME" />
+        <result property="upd_time" column="UPD_TIME" />
+    </resultMap>
+    <sql id="Base_Column_list">
+      TASK_ID,TOTAL_AMOUNT,TOTAL_NUM,AOTUMAPPING_NUM,HANDMAPPING_NUM,STATUS, VERSION,FSS_ID,MEMO,CRT_TIME, UPD_TIME
+    </sql>
+
+</mapper>

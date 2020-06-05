@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bill99.fmp.mapper.seashell.WithdrawWorkOrderMapper">
+    <resultMap id="withdrawWorkOrderEo" type="com.bill99.fmp.entity.oracleSeashell.WithdrawWorkOrderEo">
+        <result property="withdrawworkorderId" column="WITHDRAWWORKORDERID" />
+        <result property="orderSeqId" column="ORDERSEQID" />
+        <result property="memberCode" column="MEMBERCODE" />
+        <result property="withdrawType" column="WITHDRAWTYPE" />
+        <result property="amount" column="AMOUNT" />
+        <result property="name" column="NAME" />
+        <result property="branchBankName" column="BRANCHBANKNAME" />
+        <result property="bankNameId" column="BANKNAMEID" />
+        <result property="province" column="PROVINCE" />
+        <result property="city" column="CITY" />
+        <result property="bankAcctId" column="BANKACCTID" />
+        <result property="email" column="EMAIL" />
+        <result property="tel" column="TEL" />
+        <result property="remark" column="REMARK" />
+        <result property="status" column="STATUS" />
+        <result property="errorCode" column="ERRORCODE" />
+        <result property="bankDealId" column="BANKDEALID" />
+        <result property="processType" column="PROCESSTYPE" />
+        <result property="isIndividual" column="ISINDIVIDUAL" />
+        <result property="sendBankNameId" column="SENDBANKNAMEID" />
+        <result property="errorMsg" column="ERRORMSG" />
+        <result property="dealId" column="DEALID" />
+        <result property="owner" column="OWNER" />
+        <result property="refuseReason" column="REFUSEREASON" />
+        <result property="batchId" column="BATCHID" />
+        <result property="isRefund" column="ISREFUND" />
+        <result property="isProcess" column="ISPROCESS" />
+        <result property="transactor" column="TRANSACTOR" />
+        <result property="isEntrustRefund" column="ISENTRUSTREFUND" />
+        <result property="batchIdType" column="BATCHIDTYPE" />
+        <result property="payerCurrencyCode" column="PAYERCURRENCYCODE" />
+        <result property="payeeCurrencyCode" column="PAYEECURRENCYCODE" />
+        <result property="businessType" column="BUSINESSTYPE" />
+        <result property="fundOrigin" column="FUNDORIGIN" />
+        <result property="syncToken" column="SYNCTOKEN" />
+        <result property="fuYuan" column="FUYUAN" />
+        <result property="toBankRemark" column="TOBANKREMARK" />
+        <result property="bankPurpose" column="BANKPURPOSE" />
+        <result property="bankMemo" column="BANKMEMO" />
+        <result property="stgyLevel" column="STGY_LEVEL" />
+        <result property="tnValue" column="TN_VALUE" />
+        <result property="memberName" column="MEMBERNAME" />
+        <result property="dpsverifyFail" column="DPSVERIFY_FAIL" />
+        <result property="bankCode" column="BANK_CODE" />
+        <result property="bankName" column="BANK_NAME" />
+        <result property="channelId" column="CHANNEL_ID" />
+        <result property="channelIds" column="CHANNEL_IDS" />
+        <result property="channelType" column="CHANNEL_TYPE" />
+        <result property="interfaceId" column="INTERFACE_ID" />
+        <result property="accountType" column="ACCOUNT_TYPE" />
+        <result property="planId" column="PLAN_ID" />
+        <result property="planStatus" column="PLAN_STATUS" />
+        <result property="ruleType" column="RULE_TYPE" />
+        <result property="appCode" column="APP_CODE" />
+        <result property="bankAcctLength" column="BANKACCTLENGTH" />
+        <result property="requestDate" column="REQUESTDATE" javaType="java.util.Date" />
+        <result property="processDate" column="PROCESSDATE" javaType="java.util.Date" />
+        <result property="receiveDate" column="RECEIVEDATE" javaType="java.util.Date" />
+        <result property="postDate" column="POSTDATE" javaType="java.util.Date" />
+        <result property="lastToBankTime" column="LAST_TOBANK_TIME" javaType="java.util.Date" />
+        <result property="ip" column="IP" />
+        <result property="bankAcctIdPrefix" column="BANKACCTIDPREFIX"/>
+        <association property="rmResultEo" javaType="com.bill99.fmp.entity.oracleSeashell.RmResultEo">
+            <id property="tid" column="rmId"/>
+            <id property="withdrawworkorderId" column="rmWithdrawworkorderId"/>
+            <id property="txnType" column="rm_txn_type"/>
+            <id property="merchantLvl" column="rm_merchant_lvl"/>
+            <id property="foStatus" column="rm_fo_status"/>
+            <id property="respCode" column="rm_resp_code"/>
+            <id property="respMsg" column="rm_resp_msg"/>
+            <id property="ruleSet" column="rm_rule_set"/>
+            <id property="sendTime" column="rm_send_time"/>
+            <id property="respTime" column="rm_resp_time"/>
+            <id property="mototalscore" column="rm_mototalscore"/>
+            <id property="modetail" column="rm_modetail"/>
+            <id property="crtTime" column="rm_crt_time"/>
+            <id property="updTime" column="rm_upd_time"/>
+            <id property="isWarning" column="rm_iswarning"/>
+            <id property="hitedServiceCode" column="rm_hitedservicecode"/>
+            <id property="hitedServiceCodeDescn" column="rm_hitedservicecodedescn"/>
+        </association>
+    </resultMap>
+    <sql id="Base_Column_list">
+        WITHDRAWWORKORDERID, ORDERSEQID, MEMBERCODE, REQUESTDATE, WITHDRAWTYPE, AMOUNT,NAME, BRANCHBANKNAME,
+		BANKNAMEID, PROVINCE, CITY, BANKACCTID, EMAIL, TEL, REMARK, STATUS, PROCESSDATE,ERRORCODE, POSTDATE,
+		RECEIVEDATE, BANKDEALID, PROCESSTYPE, ISINDIVIDUAL, SENDBANKNAMEID, ERRORMSG, DEALID, OWNER, REFUSEREASON,
+		BATCHID, ISREFUND, ISPROCESS, TRANSACTOR, ISENTRUSTREFUND, BATCHIDTYPE, PAYERCURRENCYCODE, PAYEECURRENCYCODE,
+		BUSINESSTYPE ,FUNDORIGIN, SYNCTOKEN, FUYUAN, TOBANKREMARK, BANKPURPOSE, BANKMEMO, STGY_LEVEL,TN_VALUE,
+		LAST_TOBANK_TIME, MEMBERNAME, DPSVERIFY_FAIL, BANK_CODE, BANK_NAME, CHANNEL_ID,CHANNEL_IDS, CHANNEL_TYPE, INTERFACE_ID,
+		ACCOUNT_TYPE, PLAN_ID, PLAN_STATUS, RULE_TYPE, APP_CODE, BANKACCTLENGTH,IP,BANKACCTIDPREFIX
+    </sql>
+    <select id="getSingleTraderOfOrderid" parameterType="java.lang.String" resultType="java.util.Map">
+        SELECT
+        w.dealid,w.orderseqid,w.withdrawworkorderid,w.amount,w.membercode,w.banknameid
+        from seashell.Withdrawworkorder w
+        where w.orderseqid = #{orderseqid}
+    </select>
+
+    <select id="getPlatId" parameterType="java.lang.String" resultType="java.lang.String">
+        SELECT plan_id
+        from seashell.Withdrawworkorder t
+        where orderseqid = #{orderseqid}
+    </select>
+
+    <select id="getBatchId" parameterType="java.lang.String" resultType="java.lang.String">
+        SELECT  to_char(t.batchid)
+        FROM seashell.Withdrawworkorder t
+        WHERE orderseqid = #{orderseqid}
+    </select>
+
+</mapper>

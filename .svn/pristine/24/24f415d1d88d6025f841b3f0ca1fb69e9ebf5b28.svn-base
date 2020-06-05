@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.99bill"
+		module="99bill-qa"
+		revision="working@NJ9YYRH42"
+		conf="default"
+		confs="default, compile, zip"
+		date="20200529113531"/>
+	<dependencies>
+		<module organisation="org.apache" name="commons-collections">
+			<revision name="3.2.1" status="release" pubdate="20121121152505" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="9">
+				<metadata-artifact status="no" details="" size="416" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-collections\ivy-3.2.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-collections\ivys\ivy-3.2.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-collections/ivys/ivy-3.2.1.xml"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="commons-collections" type="jar" ext="jar" status="no" details="" size="575389" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-collections\jars\commons-collections-3.2.1.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.apache/commons-collections/jars/commons-collections-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="tp-ta-senario-helper">
+			<revision name="1.0.6" status="release" pubdate="20200414142116" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="8">
+				<metadata-artifact status="no" details="" size="444" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\tp-ta-senario-helper\ivy-1.0.6.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\tp-ta-senario-helper\ivys\ivy-1.0.6.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="tp-ta-senario-helper" type="jar" ext="jar" status="no" details="" size="9556" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\tp-ta-senario-helper\jars\tp-ta-senario-helper-1.0.6.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.99bill/tp-ta-senario-helper/jars/tp-ta-senario-helper-1.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-lang">
+			<revision name="2.6" status="release" pubdate="20151224180837" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="7">
+				<metadata-artifact status="no" details="" size="426" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-lang\ivy-2.6.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-lang\ivys\ivy-2.6.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="commons-lang" type="jar" ext="jar" status="no" details="" size="284220" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-lang\jars\commons-lang-2.6.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf" name="ezmorph">
+			<revision name="1.0.6" status="release" pubdate="20121121152426" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="6">
+				<metadata-artifact status="no" details="" size="388" time="0" location="D:\Local_Repository\ivy-cache\net.sf\ezmorph\ivy-1.0.6.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\net.sf\ezmorph\ivys\ivy-1.0.6.xml" origin-is-local="false" origin-location="http://192.168.52.211/net.sf/ezmorph/ivys/ivy-1.0.6.xml"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="ezmorph" type="jar" ext="jar" status="no" details="" size="86487" time="0" location="D:\Local_Repository\ivy-cache\net.sf\ezmorph\jars\ezmorph-1.0.6.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/net.sf/ezmorph/jars/ezmorph-1.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf" name="json-lib">
+			<revision name="2.4-jdk15" status="release" pubdate="20190116160027" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="5">
+				<metadata-artifact status="no" details="" size="420" time="0" location="D:\Local_Repository\ivy-cache\net.sf\json-lib\ivy-2.4-jdk15.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\net.sf\json-lib\ivys\ivy-2.4-jdk15.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="2.4-jdk15" rev-constraint-default="2.4-jdk15" rev-constraint-dynamic="2.4-jdk15" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="json-lib" type="jar" ext="jar" status="no" details="" size="159123" time="0" location="D:\Local_Repository\ivy-cache\net.sf\json-lib\jars\json-lib-2.4-jdk15.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/net.sf/json-lib/jars/json-lib-2.4-jdk15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="wsdl4j" name="wsdl4j">
+			<revision name="1.6.2" status="release" pubdate="20140922140022" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="4">
+				<metadata-artifact status="no" details="" size="412" time="0" location="D:\Local_Repository\ivy-cache\wsdl4j\wsdl4j\ivy-1.6.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\wsdl4j\wsdl4j\ivys\ivy-1.6.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="1.6.2" rev-constraint-default="1.6.2" rev-constraint-dynamic="1.6.2" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="wsdl4j" type="jar" ext="jar" status="no" details="" size="148429" time="0" location="D:\Local_Repository\ivy-cache\wsdl4j\wsdl4j\jars\wsdl4j-1.6.2.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/wsdl4j/wsdl4j/jars/wsdl4j-1.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-discovery">
+			<revision name="0.2" status="release" pubdate="20151117133419" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="3">
+				<metadata-artifact status="no" details="" size="436" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-discovery\ivy-0.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-discovery\ivys\ivy-0.2.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-discovery/ivys/ivy-0.2.xml"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="0.2" rev-constraint-default="0.2" rev-constraint-dynamic="0.2" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="commons-discovery" type="jar" ext="jar" status="no" details="" size="71442" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-discovery\jars\commons-discovery-0.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-discovery/jars/commons-discovery-0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="seashell-utils">
+			<revision name="2.0" status="release" pubdate="20121121155000" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="2">
+				<metadata-artifact status="no" details="" size="404" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\seashell-utils\ivy-2.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\seashell-utils\ivys\ivy-2.0.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="seashell-utils" type="jar" ext="jar" status="no" details="" size="417090" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\seashell-utils\jars\seashell-utils-2.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="axis">
+			<revision name="1.4" status="release" pubdate="20121121152444" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="1">
+				<metadata-artifact status="no" details="" size="384" time="0" location="D:\Local_Repository\ivy-cache\org.apache\axis\ivy-1.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\axis\ivys\ivy-1.4.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/axis/ivys/ivy-1.4.xml"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="axis" type="jar" ext="jar" status="no" details="" size="1599570" time="0" location="D:\Local_Repository\ivy-cache\org.apache\axis\jars\axis-1.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/axis/jars/axis-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="FO_Interface_Service">
+			<revision name="1.1.1" status="release" pubdate="20200414142116" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default, *" position="0">
+				<metadata-artifact status="no" details="" size="444" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\FO_Interface_Service\ivy-1.1.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\FO_Interface_Service\ivys\ivy-1.1.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="99bill-qa" conf="default" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="working@NJ9YYRH42"/>
+				<artifacts>
+					<artifact name="FO_Interface_Service" type="jar" ext="jar" status="no" details="" size="165028" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\FO_Interface_Service\jars\FO_Interface_Service-1.1.1.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

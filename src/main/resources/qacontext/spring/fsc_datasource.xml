@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- fmp库 数据源 -->
+    <bean id="fmpDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${fmp.mysql.className}"></property>
+        <property name="url" value="${fmp.mysql.url}"></property>
+        <property name="username" value="${fmp.mysql.userName}"></property>
+        <property name="password" value="${fmp.mysql.passowrd}"></property>
+    </bean>
+    <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="fmpDataSource"></property>
+        <property name="configLocation" value="classpath:qacontext/mybatis-common-config.xml"></property>
+        <property name="mapperLocations" value="classpath:mapper/fmp/*.xml"></property>
+    </bean>
+    <bean id="storeDGMapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.bill99.fmp.mapper.fmp" /> <!-- 查询接口-->
+        <property name="sqlSessionTemplateBeanName" value="fmpSqlSessionTemplate"></property>
+        <property name="annotationClass" value="org.springframework.stereotype.Repository"></property>
+    </bean>
+    <bean id="fmpSqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactoryBean" />
+    </bean>
+
+    <!-- seachell库 数据源 -->
+    <bean id="seashellDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${oracle.driver}"></property>
+        <property name="url" value="${fsc.seashell.url}"></property>
+        <property name="username" value="${fsc.seashell.userName}"></property>
+        <property name="password" value="${fsc.seashell.password}"></property>
+    </bean>
+
+    <bean id="seashellSqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="seashellDataSource"></property>
+        <property name="mapperLocations" value="classpath:mapper/seashell/*.xml"></property>
+    </bean>
+    <bean id="seashellSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="seashellSqlSessionFactoryBean"></constructor-arg>
+    </bean>
+    <bean id="seashellMapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.bill99.fmp.mapper.seashell"></property>
+        <property name="sqlSessionTemplateBeanName" value="seashellSessionTemplate"></property>
+        <property name="annotationClass" value="org.springframework.stereotype.Repository"></property>
+    </bean>
+</beans>

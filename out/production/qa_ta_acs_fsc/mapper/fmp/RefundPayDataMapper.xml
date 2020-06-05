@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bill99.fsc.mapper.fmp.RefundPaymentDataMapper">
+    <resultMap id="refundPaymentDataEo" type="com.bill99.fsc.entity.mysql.RefundPaymentDataEo">
+        <result property="tid" column="T_ID"></result>
+        <result property="refundId" column="REFUND_ID" />
+        <result property="taskId" column="TASK_ID" />
+        <result property="bankName" column="BANK_NAME" />
+        <result property="bank" column="BANK" />
+        <result property="bankAcct" column="BANK_ACCT" />
+        <result property="amount" column="AMOUNT" />
+        <result property="payeeName" column="PAYEE_NAME" />
+        <result property="payeeProvince" column="PAYEE_PROVINCE" />
+        <result property="payeeCity" column="PAYEE_CITY" />
+        <result property="remak" column="REMAK" />
+        <result property="bankDealData" column="BANK_DEALDATA" />
+        <result property="refundReason" column="REFUND_REASON" />
+        <result property="lineNum" column="LINE_NUM" />
+        <result property="bill99Reason" column="BILL99_REASON" />
+        <result property="orderSeqId" column="ORDERSEQID" />
+        <result property="dealId" column="DEALID" />
+        <result property="teChannelCode" column="TE_CHANELCODE" />
+        <result property="bankTxnNo" column="BANK_TXNNO" />
+        <result property="memberCode" column="MEMBERCODE" />
+        <result property="memberName" column="MEMBER_NAME" />
+        <result property="isSendEamil" column="IS_SENDEMAIL" />
+        <result property="totalAmout" column="TOTAL_AMOUNT" />
+        <result property="relateSeqId" column="RELATE_SEQ_ID" />
+        <result property="memo" column="MEMO" />
+        <result property="crt_time" column="CRT_TIME" />
+        <result property="upd_time" column="UPD_TIME" />
+    </resultMap>
+    <sql id="Base_Column_list">
+        T_ID,REFUND_ID,TASK_ID,BANK_NAME, BANK,BANK_ACCT,AMOUNT, PAYEE_NAME, PAYEE_PROVINCE, PAYEE_CITY,REMAK,BANK_DEALDATA,REFUND_REASON,LINE_NUM,BILL99_REASON,ORDERSEQID, DEALID,TE_CHANELCODE,BANK_TXNNO,MEMBERCODE,MEMBER_NAME,IS_SENDEMAIL,TOTAL_AMOUNT,RELATE_SEQ_ID,MEMO,CRT_TIME,UPD_TIME
+    </sql>
+
+</mapper>

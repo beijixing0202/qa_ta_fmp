@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bill99.fsc.mapper.seashell.DealMapper">
+    <resultMap id="dealEo" type="com.bill99.fsc.entity.oracleSeashell.DealEo">
+        <result property="dealId" column="DEALID"></result>
+        <result property="dealBeginDate" column="DEALBEGINDATE"></result>
+        <result property="orderSeqId" column="ORDERSEQID"></result>
+        <result property="dealAmount" column="DEALAMOUNT"></result>
+        <result property="payerAcctCode" column="PAYERACCTCODE"></result>
+        <result property="payeeAcctCode" column="PAYEEACCTCODE"></result>
+        <result property="dealStatus" column="DEALSTATUS"></result>
+        <result property="dealEndDate" column="DEALENDDATE"></result>
+        <result property="orgOrderId" column="ORGORDERID"></result>
+        <result property="dealCode" column="DEALCODE"></result>
+        <result property="paymentServicePkgCode" column="PAYMENTSERVICEPKGCODE"></result>
+        <result property="payerOrgCode" column="PAYERORGCODE"></result>
+        <result property="payeeOrgCode" column="PAYEEORGCODE"></result>
+        <result property="orderTime" column="ORDERTIME"></result>
+        <result property="submitAcctCode" column="SUBMITACCTCODE"></result>
+        <result property="payerAcctType" column="PAYERACCTTYPE"></result>
+        <result property="payerOrgType" column="PAYERORGTYPE"></result>
+        <result property="payeeAcctType" column="PAYEEACCTTYPE"></result>
+        <result property="payeeOrgType" column="PAYEEORGTYPE"></result>
+        <result property="dealType" column="DEALTYPE"></result>
+        <result property="payeeFee" column="PAYEEFEE"></result>
+        <result property="payerFee" column="PAYERFEE"></result>
+        <result property="syncToken" column="SYNCTOKEN"></result>
+        <result property="payeeServiceLevel" column="PAYEESERVICELEVEL"></result>
+        <result property="payerServiceLevel" column="PAYERSERVICELEVEL"></result>
+        <result property="payerCurrencyCode" column="PAYERCURRENCYCODE"></result>
+        <result property="payeeCurrencyCode" column="PAYEECURRENCYCODE"></result>
+        <result property="exchangeRate" column="EXCHANGERATE"></result>
+        <result property="hascaculatedprice" column="HASCACULATEDPRICE"></result>
+        <result property="asynAccounting" column="ASYNACCOUNTING"></result>
+        <result property="transActionDate" column="TRANSACTIONDATE"></result>
+        <result property="payeeChannel" column="PAYEECHANNEL"></result>
+        <result property="payerChannel" column="PAYERCHANNEL"></result>
+        <result property="feeType" column="FEETYPE"></result>
+        <result property="payerFeeAcctCode" column="PAYERFEEACCTCODE"></result>
+        <result property="payeeFeeAcctCode" column="PAYEEFEEACCTCODE"></result>
+
+    </resultMap>
+    <sql id="Base_Column_list">
+        DEALID,DEALBEGINDATE,ORDERSEQID,DEALAMOUNT,PAYERACCTCODE,PAYEEACCTCODE,DEALSTATUS,
+        DEALENDDATE,ORGORDERID,DEALCODE,PAYMENTSERVICEPKGCODE,PAYERORGCODE,PAYEEORGCODE,ORDERTIME,SUBMITACCTCODE,PAYERACCTTYPE,
+        PAYERORGTYPE,PAYEEACCTTYPE,PAYEEORGTYPE,DEALTYPE,PAYEEFEE,PAYERFEE,SYNCTOKEN,PAYEESERVICELEVEL,PAYERSERVICELEVEL,PAYERCURRENCYCODE,PAYEECURRENCYCODE,
+        EXCHANGERATE,HASCACULATEDPRICE,ASYNACCOUNTING,TRANSACTIONDATE,PAYEECHANNEL,PAYERCHANNEL,FEETYPE,PAYERFEEACCTCODE,PAYEEFEEACCTCODE
+    </sql>
+
+</mapper>

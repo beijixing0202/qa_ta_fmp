@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bill99.fmp.mapper.seashell.paymentOrderMapper">
+    <resultMap id="paymentOrderEo" type="com.bill99.fmp.entity.oracleSeashell.paymentOrderEo">
+        <result property="sequenceId" column="SEQUENCEID"></result>
+        <result property="orderId" column="ORDERID"></result>
+        <result property="submitAcctCode" column="SUBMITACCTCODE"></result>
+        <result property="orderCode" column="ORDERCODE"></result>
+        <result property="payMethod" column="PAYMETHOD"></result>
+        <result property="orgOrderId" column="ORGORDERID"></result>
+        <result property="productName" column="PRODUCTNAME"></result>
+        <result property="productNum" column="PRODUCTNUM"></result>
+        <result property="orderAmount" column="ORDERAMOUNT"></result>
+        <result property="discountAmount" column="DISCOUNTAMOUNT"></result>
+        <result property="couponNumber" column="COUPONNUMBER"></result>
+        <result property="payerAcctCode" column="PAYERACCTCODE"></result>
+        <result property="payerAcctType" column="PAYERACCTTYPE"></result>
+        <result property="payerOrgCode" column="PAYERORGCODE"></result>
+        <result property="payerOrgType" column="PAYERORGTYPE"></result>
+        <result property="payeeAcctCode" column="PAYEEACCTCODE"></result>
+        <result property="payeeAcctType" column="PAYEEACCTTYPE"></result>
+        <result property="payeeOrgCode" column="PAYEEORGCODE"></result>
+        <result property="payeeOrgType" column="PAYEEORGTYPE"></result>
+        <result property="orderTime" column="ORDERTIME"></result>
+        <result property="orderStatus" column="ORDERSTATUS"></result>
+        <result property="lastupDateTime" column="LASTUPDATETIME"></result>
+        <result property="returnUrl" column="RETURNURL"></result>
+        <result property="version" column="VERSION"></result>
+        <result property="memo" column="MEMO"></result>
+        <result property="relatedSequenceId" column="RELATEDSEQUENCEID"></result>
+        <result property="relatedType" column="RELATEDTYPE"></result>
+        <result property="payeeIdentity" column="PAYEEIDENTITY"></result>
+        <result property="orderDigest" column="ORDERDIGEST"></result>
+        <result property="terminalTypeCode" column="TERMINALTYPECODE"></result>
+        <result property="orderOrigin" column="ORDERORIGIN"></result>
+        <result property="isReversed" column="ISREVERSED"></result>
+        <result property="ip" column="IP"></result>
+        <result property="referenceNum" column="REFERENCENUM"></result>
+        <result property="loyalcardNumber" column="LOYALCARDNUMBER"></result>
+        <result property="merchantOrderTime" column="MERCHANTORDERTIME"></result>
+        <result property="opversion" column="OPVERSION"></result>
+        <result property="currencyCode" column="CURRENCYCODE"></result>
+        <result property="payerDisplayName" column="PAYERDISPLAYNAME"></result>
+        <result property="payeeDisplayName" column="PAYEEDISPLAYNAME"></result>
+        <result property="payeeChannel" column="PAYEECHANNEL"></result>
+        <result property="payerChannel" column="PAYERCHANNEL"></result>
+
+    </resultMap>
+
+    <sql id="Base_Column_list">
+        SEQUENCEID,ORDERID,SUBMITACCTCODE,ORDERCODE,PAYMETHOD,ORGORDERID,PRODUCTNAME,PRODUCTNUM,ORDERAMOUNT,DISCOUNTAMOUNT,COUPONNUMBER,
+        PAYERACCTCODE,PAYERACCTTYPE,PAYERORGCODE,PAYERORGTYPE,PAYEEACCTCODE,PAYEEACCTTYPE,PAYEEORGCODE,PAYEEORGTYPE,ORDERTIME,ORDERSTATUS,
+        LASTUPDATETIME,RETURNURL,VERSION,MEMO,RELATEDSEQUENCEID,RELATEDTYPE,PAYEEIDENTITY,ORDERDIGEST,TERMINALTYPECODE,ORDERORIGIN,ISREVERSED,IP,
+        REFERENCENUM,LOYALCARDNUMBER,MERCHANTORDERTIME,OPVERSION,CURRENCYCODE,PAYERDISPLAYNAME,PAYEEDISPLAYNAME,PAYEECHANNEL,PAYERCHANNEL
+    </sql>
+
+</mapper>

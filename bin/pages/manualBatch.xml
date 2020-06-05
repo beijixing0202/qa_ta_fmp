@@ -1,0 +1,19 @@
+<page name="出批次">
+    <Element eleName="手动出批次" locat='xpath^//*[@id="nav"]/div[4]/div[2]/ul/li[1]/ul/li[1]/div'>></Element>
+    <Element eleName="iframe" locat='css^div#tabs iframe'></Element>
+    <Element eleName="商户号" locat="id^memberCodes"></Element>
+    <Element eleName="商户名单名称" locat="id^memberListId"></Element>
+    <Element eleName="批次号" locat="id^batchId"></Element>
+    <Element eleName="交易号" locat='xpath^//*[@id="orderSeqIds"]'></Element>
+    <Element eleName="工单状态" locat="id^status"></Element>
+    <Element eleName="银行卡起始位" locat="id^bankAcctIdPrefix"></Element>
+    <Element eleName="产品标签" locat="id^appCode"></Element>
+    <Element eleName="查询" locat="id^batchButton"></Element>
+    <Element eleName="checkbox" locat="css^form#handBatchForm td input"></Element>
+    <Element eleName="生成批次" locat="id^batchConfirmButton"></Element>
+    <Element eleName="批次名称" locat="id^batchPrefix"></Element>
+    <Element eleName="批次确认" locat='css^div.layui-layer div:nth-child(4) a:nth-child(1)'></Element>
+    <Element eleName="申请结果确认" locat="css^div.layui-layer div:nth-child(4) a"></Element>
+    <Element eleName="批次结果" locat="id^content"></Element>
+    <Element eleName="关闭手动出批次Tab页" locat="css^li a.tabs-close"></Element>
+</page>

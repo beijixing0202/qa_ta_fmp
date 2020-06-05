@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean class="shelper.spring.ext.PropertyPlaceholderConfigurer">
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+        <property name="ignoreResourceNotFound" value="true" />
+        <property name="rootLocation">
+            <value>classpath:properties/env_dir.props</value>
+        </property>
+        <property name="childLocations">
+            <list>
+                <value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/db.properties</value>
+                <value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/faseBase.properties</value>
+            </list>
+        </property>
+
+        <property name="convertToSystemLocations">
+            <list>
+                <value>classpath:properties/${STAGE_ID}/system.properties</value>
+            </list>
+        </property>
+    </bean>
+</beans>

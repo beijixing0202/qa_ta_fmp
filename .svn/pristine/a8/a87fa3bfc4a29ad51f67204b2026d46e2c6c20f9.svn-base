@@ -1,0 +1,9 @@
+<page name="">
+    <Element eleName="批次管理" locat='xpath^//*[@id="nav"]/div[4]/div[2]/ul/li[1]/ul/li[2]/div'></Element>
+    <Element eleName="iframe" locat='css^div#tabs iframe'></Element>
+    <Element eleName="批次号" locat='id^batchCode'></Element>
+    <Element eleName="批次名称" locat='id^vagueBatchName'></Element>
+    <Element eleName="查询" locat='css^div input#queryBtn:nth-child(1)'></Element>
+    <Element eleName="手工直连" locat='xpath^//*[@id="list"]/tbody/tr/td[9]/a[1]'></Element>
+
+</page>
